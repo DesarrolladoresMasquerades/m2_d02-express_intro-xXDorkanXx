@@ -15,6 +15,15 @@ app.all("/home", (request, response)=>{
     response.sendFile(__dirname + "/views/home.html")
 })
 
+// Exercise
+app.all("/hobbies", (request, response)=>{
+    response.sendFile(__dirname + "/views/hobbies.html")
+})
+
+app.all("/hobbies/crochet", (request, response)=>{
+    response.sendFile(__dirname + "/views/crochet.html")
+})
+
 app.listen(3000, ()=>{console.log("App listening on port 3000")})
 
 
